@@ -1,0 +1,23 @@
+
+.about {
+    max-width: 62vw;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
+    margin: 4vw 23vw;
+    font-size: 1.6rem;
+}
+.nav{
+    font-size: 2rem;
+    align-items: center;
+}
+.nav h1{
+    margin-left: 44vw;
+    margin-top: 5vw;
+    color: rebeccapurple;
+}
+.about p{
+    line-height: 2;
+    color: white;
+    background-color: #18454A ;
+}

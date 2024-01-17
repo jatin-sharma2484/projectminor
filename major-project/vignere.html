@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vignere.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainSection">
+        <div class="title">
+            <b><span id="element"></span></b>
+        </div>
+        <div class="box">
+            <textarea name="plaintext" id="plaintext" cols="50" rows="15" placeholder="Enter Your PlainText Here"></textarea>
+        </div>
+        <div class="btns">
+            <input type="text" id="shift" placeholder="Key(Alphabet or String)">
+            <button class="encrypt" id="encrypt" >
+                <b>Encrypt</b>
+            </button>
+            <button class="decrypt" id="decrypt">
+                <b>Decrypt</b>
+            </button>
+            <a href="https://www.geeksforgeeks.org/caesar-cipher-in-cryptography/" class="link-caesar"><b>More Info</b></a>
+        </div>
+    </div>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['VIGNERE CIPHER'],
+                typeSpeed: 200,
+            });
+        </script>
+        <script src="vignere.js"></script>
+</body>
+</html>

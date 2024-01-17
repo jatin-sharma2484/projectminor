@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vlan.css">
+</head>
+<body>
+
+    <nav>
+        <div class="title">
+            <b><span id="element"></span></b>
+        </div>
+        <div class="exit">
+            <a class="back-to-lessons" href="network index.html">
+                <i class="fa fa-times-circle back-icon"></i>
+                <div class="back-label">Exit</div>
+        </a>
+        </div>
+    </nav>
+    <div class="box-1" id="original">
+        <div class="instructions">
+            <div class="type-1">
+                <a href="#introducing-log" class="unselectable">
+                    <div id="start" class="points-right instruction" show="#app,#app .blur" titlt="start"
+                        next="intoducing-log" style="display:block;">
+                        <strong class="strong">
+                            VLAN is a custom network which is created from one or more local area networks. It enables a group of devices available in multiple networks to be combined into one logical network. Today we will configure two VLANS namely "Sales" and "Marketing".
+                        </strong>
+                        <div class="next"></div>
+                    </div>
+
+                </a>
+            </div>
+
+
+        </div>
+        <div class="mainImg">
+            <img src="vlan.png" scrolling="no" width="90%" height="60%"></img>
+        </div>
+    </div>
+
+
+    <div class="box-2" id="introducing-log">
+        <div class="instructions10">
+            <div class="type-10">
+                <a href="#thirdStep" class="unselectable">
+                    <div id="start" class="points-10 instruction" show="#app,#app .blur" titlt="start"
+                        next="thirdStep" style="display:block;">
+                        <strong class="strong-10">
+                            Here Sales Department and Marketing Department are a part of two different VLANS namely VLAN 100 and VLAN 200 respectively.
+                            <br>
+                            Now we will try to make communication possible between Sales PC and Marketing PC which are in different VLANS.
+                        </strong>
+                        <div class="next-10"></div>
+                    </div>
+
+                </a>
+            </div>
+
+
+        </div>
+        <div class="mainImg2">
+            <img src="VLAN 2.0.jpg" scrolling="no" width="80%" height="50%"></img>
+        </div>
+    </div>
+
+    <!-- <div class="container2" id="introducing-log">
+        <div class="flex1">
+        <img src="vlan1.png" width="90%" height="50%">
+        <div class="instructions-2">
+            <a href="#secondStep" class="unselectable">
+                <div  class="points-2 instruction" style="display:block" next="secondStep"></div>
+                <strong class="strong-2">In this step we create two VLANS;VLAN 100(Sales) and VLAN 200(Marketing) and we do the basic configuration of VLAN for Switch 1.</strong>
+                <div class="next-2"></div>
+        </div>
+    </div>
+        </a>
+
+       <div class="flex2">
+        <img src="vlan2.png" width="80%" height="40%">
+        <div class="instructions-3">
+            <a href="#thirdStep" class="unselectable">
+                <div id="secondStep" class="points-3 instruction" style="display:block" next="secondStep"></div>
+                <strong class="strong-3">IN this step we configure VLAN for Switch 2. </strong>
+                <div class="next-3"></div>
+        </div>
+    </div> 
+        </a>
+    </div>
+    </div> -->
+
+    <div class="container4" id="thirdStep">
+        <img src="vlan og.jpg" class="img1" width="40%" height="80%">
+        <div class="instructions-4">
+            <a href="#forthStep" class="unselectable">
+                <div  class="points-4 instruction" style="display:block" next="secondStep"></div>
+                <strong class="strong-4">When we try to send a packet from Sales PC to the Marketing PC , the packet does not reach there because they both are in different VLANS.</strong>
+                <div class="next-4"></div>
+        </div>
+        </a>
+    </div>
+
+    <div class="container5" id="forthStep">
+        <img src="vlan ogg.jpg" width="50%" height="50%"></video>
+        <div class="instructions-5">
+            <a href="#" class="unselectable">
+                <div  class="points-5 instruction" style="display:block" next="secondStep"></div>
+                <strong class="strong-5">But when we ping Sales PC of one department with another Sales pc of different Department then the packet is successfully sent as shown in the figure. This happens because both Sales PCS belong to same VLANS. </strong>
+                <!-- <div class="next-2"></div> -->
+        </div>
+        </a>
+    </div>
+
+    <div class="button">
+        <a href="vlan practical.html">Practical Implementation</a>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['VLAN(Virtual LAN)'],
+            typeSpeed: 200,
+        });
+    </script>
+
+</body>
+</html>

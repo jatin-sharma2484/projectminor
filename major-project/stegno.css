@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    height: 15vh;
+    background-color: rgb(74, 74, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .exit{
+    margin-right: 50px;
+}
+.typed-cursor{
+    font-size: 2rem;
+    color: white;
+}
+#element {
+    color: white;
+    font-size: 2.0rem;
+    margin-left: 50px;
+}
+.back-to-lessons .back-icon {
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+}
+.back-label{
+    color: white;
+    font-size: 1rem;
+}
+.exit a{
+    text-decoration: none;
+}
+
+.cont {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-cont {
+    margin-top: 5rem;
+    display: flex;
+
+}
+
+.img1 {
+    margin-right: 15rem;
+    margin-bottom: 10rem;
+}
+
+img {
+    width: 300px;
+}
+
+
+.opa {
+    opacity: 0;
+    width: 10px;
+}

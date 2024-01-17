@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="inter vlan.css">
+</head>
+<body>
+
+    <nav>
+        <div class="title">
+            <b><span id="element"></span></b>
+        </div>
+        <div class="exit">
+            <a class="back-to-lessons" href="network index.html">
+                <i class="fa fa-times-circle back-icon"></i>
+                <div class="back-label">Exit</div>
+        </a>
+        </div>
+    </nav>
+
+    <div class="box-1">
+        <div class="instructions">
+            <div class="type-1">
+                <a href="#introducing-log" class="unselectable">
+                    <div id="start" class="points-right instruction" show="#app,#app .blur" titlt="start"
+                        next="intoducing-log" style="display:block;">
+                        <strong class="strong">
+                            Previously we studied that two PCs belonging to different VLANS cannot communicate with each other.
+                        </strong>
+                        <div class="next"></div>
+                    </div>
+
+                </a>
+            </div>
+
+
+        </div>
+        <div class="mainImg">
+            <img src="vlan.png" scrolling="no" width="90%" height="60%"></img>
+        </div>
+    </div>
+
+    <div class="box-2" id="introducing-log">
+        <div class="instructions2">
+            <div class="type-2">
+                <a href="#firstStep" class="unselectable">
+                    <div id="start" class="points-1 instruction" show="#app,#app .blur" titlt="start"
+                        next="firstStep" style="display:block;">
+                        <strong class="strong-2">
+                            But this is not true anymore. 2 devices belonging to different VLANS can also communicate with each other by "Inter VLAN Routing".
+                            <br>
+                            A VLAN is a broadcast domain, which means computers on separate VLANs are unable to communicate without the intervention of a routing device. Whenever hosts in one VLAN need to communicate with hosts in another VLAN, the traffic must be routed through a routing device. This process is known as inter-VLAN routing.
+                        </strong>
+                        <div class="next-2"></div>
+                    </div>
+
+                </a>
+            </div>
+
+
+        </div>
+        <div class="mainImg-2">
+            <img src="inter vlan.png" scrolling="no" width="90%" height="60%"></img>
+        </div>
+    </div>
+
+    <!-- <div class="container2" id="firstStep">
+        <div class="flex1">
+        <img src="inter vlan1.png" width="90%" height="50%">
+        <div class="instructions-3">
+            <a href="#secondStep" class="unselectable">
+                <div  class="points-3 instruction" style="display:block" next="secondStep"></div>
+                <strong class="strong-3">In this step we create two VLANS; VLAN 10 and VLAN 20 as we did Previously. And here we configure VLAN for Switch1</strong>
+                <div class="next-3"></div>
+        </div>
+    </div>
+        </a>
+
+       <div class="flex2">
+        <img src="inter vlan2.png" width="80%" height="40%">
+        <div class="instructions-4">
+            <a href="#thirdStep" class="unselectable">
+                <div id="secondStep" class="points-4 instruction" style="display:block" next="thirdStep"></div>
+                <strong class="strong-4">IN this step we configure VLAN for Switch 2. </strong>
+                <div class="next-4"></div>
+        </div>
+    </div> 
+        </a>
+    </div>
+    </div> -->
+
+    <div class="container10" id="firstStep">
+        <img src="inter vlan og.jpg" class="img1" width="40%" height="80%">
+        <div class="instructions-10">
+            <a href="#thirdStep" class="unselectable">
+                <div  class="points-10 instruction" style="display:block" next="thirdStep"></div>
+                <strong class="strong-10">Now we can send packets from PC having IP add. 10.0.0.1 to PC having IP as 192.168.1.3 belonging to two different VLANS namely VLAN 10 and VLAN 20 respectively. This is possible with the help of a router or a layer 3 switch. This is called Inter VLAN Routing.</strong>
+                <div class="next-10"></div>
+        </div>
+        </a>
+    </div>
+
+    <div class="container3" id="thirdStep">
+        <div class="button">
+            <a href="intervlan practical.html">Practical Implementation</a>
+        </div>
+        <div class="instructions-5">
+            <a href="#forthStep" class="unselectable">
+                <div  class="points-5 instruction" style="display:block" next="forthStep"></div>
+                <strong class="strong-5">Click here to see the "Practical Implementation" of how Inter VLAN Routing works.</strong>
+                <!-- <div class="next-5"></div> -->
+        </div>
+        </a>
+    </div>
+
+    <!-- <div class="container4" id="forthStep">
+        <img src="vlan3.png" class="img1" width="40%" height="30%">
+        <img src="vlan4.png" class="img2" width="40%" height="30%">
+        <div class="instructions-6">
+            <a href="#fifthStep" class="unselectable">
+                <div  class="points-6 instruction" style="display:block" next="fifthStep"></div>
+                <strong class="strong-6">Now assign the IP Addresses to all the PC's by following the above steps.</strong>
+                <div class="next-6"></div>
+        </div>
+        </a>
+    </div>
+
+    <div class="container5" id="fifthStep">
+        <video src="inter vlan final.mp4" controls width="60%"></video>
+        <div class="instructions-7">
+            <a href="#" class="unselectable">
+                <div  class="points-7 instruction" style="display:block" ></div>
+                <strong class="strong-7">This is the Final Outcome. Here we made communication possible between two different VLANS with two PCs having IPs 10.0.0.1 and 192.168.1.3 via inter VLAN routing.</strong>
+                <div class="next-2"></div> -->
+        <!-- </div>
+        </a>
+    </div> -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Inter VLAN Routing'],
+            typeSpeed: 200,
+        });
+    </script>
+
+</body>
+</html>

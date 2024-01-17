@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="caesarAnimation.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="title">
+            <b><span id="element"></span></b>
+        </div>
+        <div class="exit">
+            <a class="back-to-lessons" href="index.html">
+                <i class="fa fa-times-circle back-icon"></i>
+                <div class="back-label">Exit</div>
+        </a>
+        </div>
+    </nav>
+
+    <div class="box-1">
+        <div class="instructions">
+            <div class="type-1">
+                <a href="#introducing-log" class="unselectable">
+                    <div id="start" class="points-right instruction" show="#app,#app .blur" titlt="start"
+                        next="intoducing-log" style="display:block;">
+                        <strong class="strong">
+                            This is the plain text which we have to convert in the cipher text with the help of a give
+                            key
+                        </strong>
+                        <div class="next"></div>
+                    </div>
+
+                </a>
+            </div>
+
+
+        </div>
+        <div class="mainImg">
+            <img src="hello.png" scrolling="no" width="50%" height="60%"></img>
+        </div>
+    </div>
+    <div class="container" id="introducing-log">
+        <img src="ss1.png" width="60%" height="30%">
+        <div class="instructions-1">
+            <a href="#firstStep" class="unselectable">
+                <div  class="points-up instruction" style="display:block" next="firstStep"></div>
+                <strong class="strong-2">This is the encryption and decryption formula</strong>
+                <div class="next-1"></div>
+        </div>
+        </a>
+    </div>
+
+    <div class="container2" id="firstStep">
+        <img src="Class mei.png" width="40%" height="30%">
+        <div class="instructions-2">
+            <a href="#secondStep" class="unselectable">
+                <div  class="points-2 instruction" style="display:block" next="secondStep"></div>
+                <strong class="strong-3">now if we move according to the formula with the shift of 3 then we get K of
+                    H</strong>
+                <div class="next-2"></div>
+        </div>
+        </a>
+    </div>
+
+    <div class="container3" id="firstStep">
+        <img src="Class mei new.png" width="40%" height="30%">
+        <div class="instructions-3">
+            <a href="#start" class="unselectable">
+                <div id="secondStep" class="points-3 instruction" style="display:block" next="secondStep"></div>
+                <strong class="strong-3">In similar way, by putting all the alphabets of HELLO in the encryption formula with the key 3, we get KHOOR of HELLO</strong>
+                <!-- <div class="next-3"></div> -->
+        </div>
+        </a>
+    </div>
+    <div class="button">
+        <a href="caesar.html">Practical Implementation</a>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['CAESAR CIPHER'],
+            typeSpeed: 200,
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    height: 15vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .exit{
+    margin-right: 50px;
+}
+.typed-cursor{
+    font-size: 2rem;
+    color: rgb(226, 215, 113);;
+}
+#element {
+    color: rgb(226, 215, 113);
+    font-size: 2.0rem;
+    margin-left: 50px;
+}
+.back-to-lessons .back-icon {
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(226, 215, 113);
+}
+.back-label{
+    color: rgb(226, 215, 113);
+    font-size: 1rem;
+}
+.exit a{
+    text-decoration: none;
+}
+.practicalfinal video{
+    margin-top: 5vw;
+}
+.button{
+    padding: 7px;
+    border-radius: 9px;
+    background-color: yellow;
+    width: 12rem;
+    margin-left: 1vw;
+}
+.button a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+}
+.button2{
+    padding: 7px;
+    border-radius: 9px;
+    background-color: yellow;
+    width: 12rem;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+.button2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+}

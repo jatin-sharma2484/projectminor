@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stegno animation.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="title">
+            <b><span id="element"></span></b>
+        </div>
+        <div class="exit">
+            <a class="back-to-lessons" href="index.html">
+                <i class="fa fa-times-circle back-icon"></i>
+                <div class="back-label">Exit</div>
+        </a>
+        </div>
+    </nav>
+
+    <div class="box-1">
+        <div class="instructions">
+            <div class="type-1">
+                <a href="#introducing-log" class="unselectable">
+                    <div id="start" class="points-right instruction" show="#app,#app .blur" titlt="start"
+                        next="intoducing-log" style="display:block;">
+                        <strong class="strong">
+                            Steganography is the technique of hiding data within an ordinary, nonsecret file or message to avoid detection; the hidden data is then extracted at its destination. Steganography can be used to conceal almost any type of digital content, including text, image, video or audio content. The secret data can be hidden inside almost any other type of digital content.
+                        </strong>
+                        <div class="next"></div>
+                    </div>
+
+                </a>
+            </div>
+
+
+        </div>
+        <div class="mainImg">
+            <img src="stegno1.jpeg" scrolling="no" width="50%" height="60%"></img>
+        </div>
+
+    </div>
+
+        <div class="container" id="introducing-log">
+            <img src="stegno2.png" width="50%" height="20%">
+            <div class="instructions-1">
+                <a href="#firstStep" class="unselectable">
+                    <div  class="points-up instruction" style="display:block" next="firstStep"></div>
+                    <strong class="strong-2">The following is the image in which we will hide our secret text.
+                        <br>
+                        And the given text is the secret text which will hide inside this image and then send it to the receiver.
+                    </strong>
+                    <div class="next-1"></div>
+            </div>
+            </a>
+        </div>
+
+        <div class="container2" id="firstStep">
+            <img src="stegno3.jpg" width="20%" height="2%">
+            <div class="instructions-2">
+                <a href="#firstStep" class="unselectable">
+                    <div  class="points-2 instruction" style="display:block" next="firstStep"></div>
+                    <strong class="strong-3">This will be image that will come as a result and the text is now hidden inside the image.
+                        <br>
+                        Now no attacker will be able to read the text and the receiver will decrypt the image to get the taxt back.
+                    </strong>
+                    <!-- <div class="next-1"></div> -->
+            </div>
+            </a>
+        </div>
+
+        <div class="button">
+            <a href="stegno.html">Practical Implementation</a>
+        </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['STEGNOGRAPHY'],
+            typeSpeed: 200,
+        });
+    </script>
+
+</body>
+</html>
